@@ -12,7 +12,7 @@ int main(int argc, const char* argv[]) {
     int n;
     int res;
     char str[64];
-    while ((res = fscanf(fp, "%d\n", &n)) != EOF) {
+    while ((res = fscanf(fp, "%d", &n)) != EOF) {
         if (res != 1) {
             fscanf(fp, "%s\n", str);
             printf("invalid input %s\n", str);
